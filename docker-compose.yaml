@@ -27,6 +27,7 @@ services:
 
       # WARNING: you need to add all packages from Distribution packages here ONE BY ONE, see the notice below for explanation.
       - ./Packages/Sites/:/app/Packages/Sites/
+      - ./Packages/Sites/Neos.Demo/:/app/Packages/Sites/Neos.Demo/
     ports:
       - 8081:8081
   # DB

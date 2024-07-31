@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1987fba8dc7907ea57c0bebe01fe976",
+    "content-hash": "b779358b9bb775f93a894907a9852131",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2940,11 +2940,11 @@
         },
         {
             "name": "neos/demo",
-            "version": "8.3.x-dev",
+            "version": "8.3",
             "dist": {
                 "type": "path",
                 "url": "./DistributionPackages/Neos.Demo",
-                "reference": "97e3c7fd78282842fe57f96d30c0a0a3579bc722"
+                "reference": "84ae5a1f2d42c2a8422d3f53c963a7a8c009e191"
             },
             "require": {
                 "neos/fusion-form": "^2.0 || dev-master",
@@ -2953,7 +2953,8 @@
                 "neos/nodetypes-basemixins": "^8.3",
                 "neos/nodetypes-contentreferences": "^8.3",
                 "neos/nodetypes-html": "^8.3",
-                "neos/nodetypes-navigation": "^8.3"
+                "neos/nodetypes-navigation": "^8.3",
+                "sandstorm/usermanagement": "dev-fusion-support"
             },
             "suggest": {
                 "sitegeist/monocle": "An living-styleguide for Neos that is based on the actual fusion-code",
@@ -6011,6 +6012,80 @@
             "time": "2024-02-02T18:59:58+00:00"
         },
         {
+            "name": "neos/swiftmailer",
+            "version": "7.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neos/swiftmailer.git",
+                "reference": "a92736bd6565ea4e8ab40985a4970acc594f48f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neos/swiftmailer/zipball/a92736bd6565ea4e8ab40985a4970acc594f48f3",
+                "reference": "a92736bd6565ea4e8ab40985a4970acc594f48f3",
+                "shasum": ""
+            },
+            "require": {
+                "neos/flow": "^5.2 || ^6.0 || ^7.0 || ^8.0 ||dev-master",
+                "swiftmailer/swiftmailer": "^6.0"
+            },
+            "type": "neos-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.0.x-dev"
+                },
+                "applied-flow-migrations": [
+                    "TYPO3.Flow-201209251426",
+                    "TYPO3.FLOW3-201209201112",
+                    "TYPO3.FLOW3-201201261636",
+                    "TYPO3.Fluid-201205031303",
+                    "TYPO3.FLOW3-201205292145",
+                    "TYPO3.FLOW3-201206271128",
+                    "TYPO3.Flow-201211151101",
+                    "TYPO3.Flow-201212051340",
+                    "TYPO3.Flow-201310031523",
+                    "TYPO3.Flow-201405111147",
+                    "TYPO3.Fluid-20141113120800",
+                    "TYPO3.Flow-20141113121400",
+                    "TYPO3.Fluid-20141121091700",
+                    "TYPO3.Fluid-20150214130800",
+                    "TYPO3.Flow-20151113161300",
+                    "TYPO3.Flow-20161115140400",
+                    "TYPO3.Flow-20161115140430",
+                    "Neos.Flow-20161124204700",
+                    "Neos.Flow-20161124204701",
+                    "Neos.Flow-20161124224015",
+                    "Neos.Eel-20161124230101",
+                    "Neos.Kickstart-20161124230102",
+                    "Neos.Imagine-20161124231742",
+                    "Neos.Media-20161124233100",
+                    "Neos.Kickstarter-20161125110814",
+                    "Neos.Flow-20161125124112"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Neos\\SwiftMailer\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Flow package for easy use of Swift Mailer",
+            "support": {
+                "issues": "https://github.com/neos/swiftmailer/issues",
+                "source": "https://github.com/neos/swiftmailer/tree/7.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://shop.neos.io/neosfunding/",
+                    "type": "custom"
+                }
+            ],
+            "time": "2022-04-12T15:17:16+00:00"
+        },
+        {
             "name": "neos/twitter-bootstrap",
             "version": "3.0.8",
             "source": {
@@ -6489,6 +6564,84 @@
                 }
             ],
             "time": "2023-11-07T11:40:25+00:00"
+        },
+        {
+            "name": "pelago/emogrifier",
+            "version": "v7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MyIntervals/emogrifier.git",
+                "reference": "727bdf7255b51798307f17dec52ff8a91f1c7de3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/727bdf7255b51798307f17dec52ff8a91f1c7de3",
+                "reference": "727bdf7255b51798307f17dec52ff8a91f1c7de3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
+                "sabberworm/php-css-parser": "^8.4.0",
+                "symfony/css-selector": "^4.4.23 || ^5.4.0 || ^6.0.0 || ^7.0.0"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "1.3.2",
+                "phpunit/phpunit": "9.6.11",
+                "rawr/cross-data-providers": "2.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "8.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pelago\\Emogrifier\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Klee",
+                    "email": "github@oliverklee.de"
+                },
+                {
+                    "name": "Zoli Szabó",
+                    "email": "zoli.szabo+github@gmail.com"
+                },
+                {
+                    "name": "John Reeve",
+                    "email": "jreeve@pelagodesign.com"
+                },
+                {
+                    "name": "Jake Hotson",
+                    "email": "jake@qzdesign.co.uk"
+                },
+                {
+                    "name": "Cameron Brooks"
+                },
+                {
+                    "name": "Jaime Prado"
+                }
+            ],
+            "description": "Converts CSS styles into inline style attributes in your HTML code",
+            "homepage": "https://www.myintervals.com/emogrifier.php",
+            "keywords": [
+                "css",
+                "email",
+                "pre-processing"
+            ],
+            "support": {
+                "issues": "https://github.com/MyIntervals/emogrifier/issues",
+                "source": "https://github.com/MyIntervals/emogrifier"
+            },
+            "time": "2023-12-06T02:00:20+00:00"
         },
         {
             "name": "psr/cache",
@@ -7260,6 +7413,182 @@
             "time": "2024-05-24T10:39:05+00:00"
         },
         {
+            "name": "sabberworm/php-css-parser",
+            "version": "v8.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MyIntervals/PHP-CSS-Parser.git",
+                "reference": "d2fb94a9641be84d79c7548c6d39bbebba6e9a70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MyIntervals/PHP-CSS-Parser/zipball/d2fb94a9641be84d79c7548c6d39bbebba6e9a70",
+                "reference": "d2fb94a9641be84d79c7548c6d39bbebba6e9a70",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "php": ">=5.6.20"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.27"
+            },
+            "suggest": {
+                "ext-mbstring": "for parsing UTF-8 CSS"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "9.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sabberworm\\CSS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Schweikert"
+                },
+                {
+                    "name": "Oliver Klee",
+                    "email": "github@oliverklee.de"
+                },
+                {
+                    "name": "Jake Hotson",
+                    "email": "jake.github@qzdesign.co.uk"
+                }
+            ],
+            "description": "Parser for CSS Files written in PHP",
+            "homepage": "https://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "keywords": [
+                "css",
+                "parser",
+                "stylesheet"
+            ],
+            "support": {
+                "issues": "https://github.com/MyIntervals/PHP-CSS-Parser/issues",
+                "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v8.6.0"
+            },
+            "time": "2024-07-01T07:33:21+00:00"
+        },
+        {
+            "name": "sandstorm/templatemailer",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sandstorm/TemplateMailer.git",
+                "reference": "321d0f96d6bff9d93850e658a220140ab71352d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sandstorm/TemplateMailer/zipball/321d0f96d6bff9d93850e658a220140ab71352d6",
+                "reference": "321d0f96d6bff9d93850e658a220140ab71352d6",
+                "shasum": ""
+            },
+            "require": {
+                "neos/flow": "^7.3 || ^8.0 || dev-main",
+                "neos/swiftmailer": "^7.0",
+                "pelago/emogrifier": "^6.0 || ^7.0"
+            },
+            "type": "neos-package",
+            "autoload": {
+                "psr-4": {
+                    "Sandstorm\\TemplateMailer\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bastian Heist",
+                    "homepage": "https://www.sandstorm.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Neos and Flow package for simple handling of template-based emails, including CSS inlining",
+            "homepage": "https://github.com/sandstorm/TemplateMailer",
+            "keywords": [
+                "Neos",
+                "css",
+                "email",
+                "flow",
+                "mail",
+                "mail template",
+                "mailer"
+            ],
+            "support": {
+                "issues": "https://github.com/sandstorm/TemplateMailer/issues",
+                "source": "https://github.com/sandstorm/TemplateMailer"
+            },
+            "time": "2023-11-24T14:24:38+00:00"
+        },
+        {
+            "name": "sandstorm/usermanagement",
+            "version": "dev-fusion-support",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codecrafter404/UserManagement.git",
+                "reference": "36ec012adc39838368745209619824ca7efff6d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codecrafter404/UserManagement/zipball/36ec012adc39838368745209619824ca7efff6d5",
+                "reference": "36ec012adc39838368745209619824ca7efff6d5",
+                "shasum": ""
+            },
+            "require": {
+                "neos/flow": "^6.0 || ^7.0 || ^8.0 || dev-master",
+                "sandstorm/templatemailer": "^2.0.2"
+            },
+            "type": "neos-package",
+            "autoload": {
+                "psr-4": {
+                    "Sandstorm\\UserManagement\\": "Classes"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bastian Heist",
+                    "homepage": "https://www.sandstorm.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Kurfuerst",
+                    "homepage": "https://www.sandstorm.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Neos and Flow package for user management, login/logout, password reset and user activation",
+            "homepage": "https://github.com/sandstorm/UserManagement",
+            "keywords": [
+                "Flow",
+                "Neos",
+                "account",
+                "forgot password",
+                "frontend login",
+                "login",
+                "logout",
+                "registration",
+                "user"
+            ],
+            "support": {
+                "issues": "https://github.com/sandstorm/UserManagement/issues",
+                "source": "https://github.com/sandstorm/UserManagement"
+            },
+            "time": "2024-07-31T12:19:29+00:00"
+        },
+        {
             "name": "seld/jsonlint",
             "version": "1.11.0",
             "source": {
@@ -7431,6 +7760,82 @@
                 "source": "https://github.com/Seldaek/signal-handler/tree/2.0.2"
             },
             "time": "2023-09-03T09:24:00+00:00"
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "v6.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "8a5d5072dca8f48460fce2f4131fcc495eec654c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8a5d5072dca8f48460fce2f4131fcc495eec654c",
+                "reference": "8a5d5072dca8f48460fce2f4131fcc495eec654c",
+                "shasum": ""
+            },
+            "require": {
+                "egulias/email-validator": "^2.0|^3.1",
+                "php": ">=7.0.0",
+                "symfony/polyfill-iconv": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "symfony/phpunit-bridge": "^4.4|^5.4"
+            },
+            "suggest": {
+                "ext-intl": "Needed to support internationalized email addresses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Corbyn"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "https://swiftmailer.symfony.com",
+            "keywords": [
+                "email",
+                "mail",
+                "mailer"
+            ],
+            "support": {
+                "issues": "https://github.com/swiftmailer/swiftmailer/issues",
+                "source": "https://github.com/swiftmailer/swiftmailer/tree/v6.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/swiftmailer/swiftmailer",
+                    "type": "tidelift"
+                }
+            ],
+            "abandoned": "symfony/mailer",
+            "time": "2021-10-18T15:26:12+00:00"
         },
         {
             "name": "symfony/cache",
@@ -7702,6 +8107,71 @@
                 }
             ],
             "time": "2024-07-26T12:21:55+00:00"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v7.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "1c7cee86c6f812896af54434f8ce29c8d94f9ff4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/1c7cee86c6f812896af54434f8ce29c8d94f9ff4",
+                "reference": "1c7cee86c6f812896af54434f8ce29c8d94f9ff4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Converts CSS selectors to XPath expressions",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/css-selector/tree/v7.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-05-31T14:57:53+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -8029,6 +8499,86 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/polyfill-ctype/tree/v1.30.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-05-31T15:07:36+00:00"
+        },
+        {
+            "name": "symfony/polyfill-iconv",
+            "version": "v1.30.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-iconv.git",
+                "reference": "c027e6a3c6aee334663ec21f5852e89738abc805"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/c027e6a3c6aee334663ec21f5852e89738abc805",
+                "reference": "c027e6a3c6aee334663ec21f5852e89738abc805",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-iconv": "*"
+            },
+            "suggest": {
+                "ext-iconv": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Iconv\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Iconv extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "iconv",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.30.0"
             },
             "funding": [
                 {
@@ -10908,11 +11458,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {
-        "neos/demo": 20
-    },
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
