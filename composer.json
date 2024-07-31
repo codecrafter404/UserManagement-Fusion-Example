@@ -23,7 +23,7 @@
         "neos/neos": "~8.3.0",
         "neos/site-kickstarter": "~8.3.0",
 
-        "neos/demo": "~8.3.0",
+        "neos/demo": "8.3.x-dev",
         "neos/neos-ui": "~8.3.0",
         "neos/seo": "~3.0",
         "neos/redirecthandler-neosadapter": "~4.2",

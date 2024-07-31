@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ee015ca90b23e78b6d1c14009c02020",
+    "content-hash": "e1987fba8dc7907ea57c0bebe01fe976",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2940,17 +2940,11 @@
         },
         {
             "name": "neos/demo",
-            "version": "8.3.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/neos/Neos.Demo.git",
-                "reference": "97e3c7fd78282842fe57f96d30c0a0a3579bc722"
-            },
+            "version": "8.3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/neos/Neos.Demo/zipball/97e3c7fd78282842fe57f96d30c0a0a3579bc722",
-                "reference": "97e3c7fd78282842fe57f96d30c0a0a3579bc722",
-                "shasum": ""
+                "type": "path",
+                "url": "./DistributionPackages/Neos.Demo",
+                "reference": "97e3c7fd78282842fe57f96d30c0a0a3579bc722"
             },
             "require": {
                 "neos/fusion-form": "^2.0 || dev-master",
@@ -3061,22 +3055,13 @@
                     "Neos\\Demo\\": "Classes"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
             "description": "Site package for the Neos Demo Site",
-            "support": {
-                "issues": "https://github.com/neos/Neos.Demo/issues",
-                "source": "https://github.com/neos/Neos.Demo/tree/8.3.15"
-            },
-            "funding": [
-                {
-                    "url": "https://shop.neos.io/neosfunding/",
-                    "type": "custom"
-                }
-            ],
-            "time": "2024-06-06T07:40:33+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "neos/diff",
@@ -10924,7 +10909,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "neos/demo": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
