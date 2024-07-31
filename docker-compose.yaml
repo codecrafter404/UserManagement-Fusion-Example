@@ -2,15 +2,24 @@
 #
 # For instructions how to use docker-compose, see
 # https://docs.neos.io/cms/installation-development-setup/docker-and-docker-compose-setup#docker-compose-cheat-sheet
-version: '3.7'
 services:
   # Neos CMS
   neos:
+    depends_on:
+      db:
+        condition: service_started
+        restart: true
     build:
       context: .
       dockerfile: Dockerfile.dev
     environment:
       FLOW_CONTEXT: 'Development/Docker'
+      DB_HOST: db
+      DB_NAME: db
+      DB_USER: root
+      DB_PASSWORD: db
+      NEOS_ADMIN_USER: root
+      NEOS_ADMIN_PASSWORD: root
     volumes:
       - ./composer.json:/app/composer.json
       - ./composer.lock:/app/composer.lock
