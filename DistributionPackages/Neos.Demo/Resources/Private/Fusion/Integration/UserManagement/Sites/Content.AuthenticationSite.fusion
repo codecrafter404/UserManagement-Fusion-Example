@@ -1,0 +1,6 @@
+authenticationSite = Neos.Demo:SiteLayout {
+    title = 'Login'
+    content = Neos.Demo:Authentication {
+        account = ${account}
+    }
+}

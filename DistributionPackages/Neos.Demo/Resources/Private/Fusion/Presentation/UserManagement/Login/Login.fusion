@@ -1,0 +1,19 @@
+prototype(Neos.Demo:Component.Login) < prototype(Neos.Fusion:Component) {
+
+    account = ''
+    isAuthenticated = ''
+
+    renderer = Neos.Fusion:Case {
+        logout {
+            condition = ${props.isAuthenticated}
+            renderer = Neos.Demo:Component.LogoutForm {
+                account = ${props.account}
+            }
+        }
+        default {
+            condition = ${true}
+            renderer = Neos.Demo:Content.LoginForm
+        }
+    }
+
+}

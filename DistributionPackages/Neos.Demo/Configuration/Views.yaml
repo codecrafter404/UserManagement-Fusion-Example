@@ -1,0 +1,18 @@
+-
+  requestFilter: 'isPackage("Sandstorm.UserManagement") && isController("Login") && isAction("login")'
+  viewObjectName: 'Neos\Fusion\View\FusionView'
+  options:
+    fusionPathPatterns:
+      - resource://Neos.Fusion/Private/Fusion/Root.fusion
+      - resource://Neos.Fusion.Form/Private/Fusion/Root.fusion
+      - resource://Neos.Demo/Private/Fusion/Root.fusion
+    fusionPath: loginSite
+-
+  requestFilter: 'isPackage("Sandstorm.UserManagement") && isController("Login") && isAction("authenticate")'
+  viewObjectName: 'Neos\Fusion\View\FusionView'
+  options:
+    fusionPathPatterns:
+      - resource://Neos.Fusion/Private/Fusion/Root.fusion
+      - resource://Neos.Fusion.Form/Private/Fusion/Root.fusion
+      - resource://Neos.Demo/Private/Fusion/Root.fusion
+    fusionPath: authenticationSite

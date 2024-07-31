@@ -1,0 +1,8 @@
+prototype(Neos.Demo:Authentication) < prototype(Neos.Fusion:Component) {
+
+    account = ''
+
+    renderer = Neos.Demo:Content.Login {
+        account = ${props.account}
+    }
+}
