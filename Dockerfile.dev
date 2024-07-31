@@ -31,4 +31,4 @@ COPY . /app
 RUN chmod +x /app/entrypoint.sh
 
 # start the dev server
-ENTRYPOINT ["./entrypoint.sh"]
+CMD [ "./flow", "server:run", "--host", "0.0.0.0" ]

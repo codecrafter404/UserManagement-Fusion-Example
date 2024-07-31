@@ -6,9 +6,7 @@ services:
   # Neos CMS
   neos:
     depends_on:
-      db:
-        condition: service_started
-        restart: true
+      - db
     build:
       context: .
       dockerfile: Dockerfile.dev
