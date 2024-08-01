@@ -1,0 +1,10 @@
+prototype(Neos.Demo:Component.FieldContainer) < prototype(Neos.Fusion.Form:FieldContainer) {
+    errorRenderer = 'Neos.Demo:Component.ErrorRenderer'
+    renderer = afx`
+        <label>
+            {props.label}
+            {props.content}
+            <Neos.Fusion:Renderer @if.hasErrors={field.hasErrors()} type={props.errorRenderer} element.result={field.getResult()} />
+        </label>
+    `
+}

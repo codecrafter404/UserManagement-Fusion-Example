@@ -11,3 +11,6 @@
       '*': false
       'Neos.Demo:Constraint.Content.Main': true
       'Neos.Demo:Constraint.Content.Carousel': false
+      'Sandstorm.UserManagement:Registration': true
+      'Sandstorm.UserManagement:Profile': true
+      'Sandstorm.UserManagement:LoginForm': true
