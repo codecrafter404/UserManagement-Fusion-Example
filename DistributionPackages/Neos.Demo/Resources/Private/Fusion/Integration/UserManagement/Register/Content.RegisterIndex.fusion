@@ -1,6 +1,0 @@
-prototype(Neos.Demo:Content.Register.Index) < prototype(Neos.Fusion:Component) {
-    isAuthenticated = ${Sandstorm.UserManagement.isAuthenticated('Sandstorm.UserManagement:Login')}
-    renderer = Neos.Demo:Component.Register.Index {
-        isAuthenticated = ${props.isAuthenticated}
-    }
-}

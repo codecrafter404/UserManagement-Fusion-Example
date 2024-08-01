@@ -7536,12 +7536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codecrafter404/UserManagement.git",
-                "reference": "36ec012adc39838368745209619824ca7efff6d5"
+                "reference": "ed21c0393ac5bf217376f97105be0d7d05fafb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codecrafter404/UserManagement/zipball/36ec012adc39838368745209619824ca7efff6d5",
-                "reference": "36ec012adc39838368745209619824ca7efff6d5",
+                "url": "https://api.github.com/repos/codecrafter404/UserManagement/zipball/ed21c0393ac5bf217376f97105be0d7d05fafb5e",
+                "reference": "ed21c0393ac5bf217376f97105be0d7d05fafb5e",
                 "shasum": ""
             },
             "require": {
@@ -7586,7 +7586,7 @@
                 "issues": "https://github.com/sandstorm/UserManagement/issues",
                 "source": "https://github.com/sandstorm/UserManagement"
             },
-            "time": "2024-07-31T12:19:29+00:00"
+            "time": "2024-08-01T12:06:20+00:00"
         },
         {
             "name": "seld/jsonlint",

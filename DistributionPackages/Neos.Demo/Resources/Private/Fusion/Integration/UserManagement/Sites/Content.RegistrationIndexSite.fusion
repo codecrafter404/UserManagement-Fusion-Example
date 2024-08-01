@@ -1,6 +1,0 @@
-registrationIndexSite = Neos.Demo:SiteLayout {
-    title = 'Registration'
-    content = Neos.Demo:Content.Register.Index {
-        account = ${account}
-    }
-}

@@ -1,6 +1,0 @@
-loginSite = Neos.Demo:SiteLayout {
-    title = 'Login'
-    content = Neos.Demo:Content.Login {
-        account = ${account}
-    }
-}
